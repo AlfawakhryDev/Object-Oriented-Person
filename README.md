@@ -22,11 +22,11 @@ To use the `Person` class in your C++ program, follow these steps:
 
 The `Person` class has the following attributes:
 
-- `int id` (read-only)
-- `string firstName`
-- `string lastName`
-- `string email`
-- `string phone`
+- `int _id` (read-only)
+- `string _firstName`
+- `string _lastName`
+- `string _email`
+- `string _phone`
 
 ## Methods
 
@@ -51,9 +51,17 @@ Here's an example of how to create a `Person` object and use its methods:
 
 ```cpp
 int main() {
+    // Create a Person object
     Person person1(1, "Abdelrahman", "Alfawakhry", "Abdelrahman.Alfawakhry@X.com", "1234567890");
+    
+    // Print person details
     person1.print();
+    
+    // Send an email
     person1.sendEmail("Hello", "How are you?");
+    
+    // Send an SMS
     person1.sendSms("How are you");
+    
     return 0;
 }
